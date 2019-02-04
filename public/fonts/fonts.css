@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "GT-Walsheim-Pro-Light";
+  font-weight: 300;
+  src: url("./GT-Walsheim-Pro-Light.otf");
+}
+
+@font-face {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: 400;
+  src: url("./GT-Walsheim-Pro-Regular.eot"); /* IE9 Compat Modes */
+  src: url("./GT-Walsheim-Pro-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./GT-Walsheim-Pro-Regular.otf") format("opentype"), /* Open Type Font */
+    url("./GT-Walsheim-Pro-Regular.svg") format("svg"), /* Legacy iOS */
+    url("./GT-Walsheim-Pro-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./GT-Walsheim-Pro-Regular.woff") format("font-woff"), /* Modern Browsers */
+    url("./GT-Walsheim-Pro-Regular.woff2") format("woff2"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "GT-Walsheim-Pro-Medium";
+  font-weight: 500;
+  src: url("./GT-Walsheim-Pro-Medium.otf");
+}
+
+@font-face {
+  font-family: "GT-Walsheim-Pro-Bold";
+  font-weight: 700;
+  src: url("./GT-Walsheim-Pro-Bold.otf");
+}
