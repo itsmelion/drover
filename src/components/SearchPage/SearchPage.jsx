@@ -1,10 +1,11 @@
 import React from 'react';
+import CarList from 'components/CarList/CarList';
+import MonthlyConsumer from 'components/SearchFilters/MonthlyConsumer/MonthlyConsumer';
 
 const SearchPage = () => (
-  <main id="SearchPage">
-    <h1>DROVER</h1>
-    <h3>Search</h3>
-    <p>Welcome!</p>
+  <main id="SearchPage" row="">
+    <MonthlyConsumer />
+    <CarList />
   </main>
 );
 
