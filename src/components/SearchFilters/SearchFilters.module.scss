@@ -5,4 +5,15 @@
   label {
     font-family: "GT-Walsheim-Pro-Medium";
   }
+
+  input {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0 .25rem;
+    border: 1pt solid black;
+    border-image: initial;
+    line-height: 1.5;
+    font-size: 1.15rem;
+  }
 }
