@@ -3,7 +3,7 @@ import { keyBy } from 'lodash';
 import { parseIntegers } from './transform.utilities';
 import dynamicInputData, { inputKeys } from './dynamic-inputs.data';
 
-const endpoint = 'https://app.joindrover.com/api/web/vehicles';
+export const endpoint = 'https://app.joindrover.com/api/web/vehicles';
 
 /**
   * @function search

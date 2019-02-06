@@ -11,7 +11,6 @@ class Consumer extends PureComponent {
   signal = axios.CancelToken.source();
 
   componentDidUpdate() {
-    // console.log(this.state.vehicle_type);
     this.props.search(this.state, { cancelToken: this.signal.token });
   }
 
@@ -23,10 +22,7 @@ class Consumer extends PureComponent {
     this.setState(prevState => ({ ...prevState, [name]: value }));
   }
 
-  switchMode = (mode) => {
-    // console.log(this.state);
-    this.setState(({ vehicle_type: mode }));
-  }
+  switchMode = mode => this.setState(({ vehicle_type: mode }));
 
   render() {
     return (
