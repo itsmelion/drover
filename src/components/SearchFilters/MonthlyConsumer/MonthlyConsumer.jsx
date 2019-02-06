@@ -1,18 +1,24 @@
-/* eslint-disable jsx-a11y/label-has-for */
-import React, { Component } from 'react';
+/* eslint-disable jsx-a11y/label-has-for, react/destructuring-assignment */
+import axios from 'axios';
+import React, { PureComponent } from 'react';
 import { apiParams, apiSetup } from 'api';
 import SearchContainer from '../SearchContainer';
-import { getQueryParams } from '../queryParams.helper';
 
-class MonthlyConsumer extends Component {
-  state = Object.assign(apiSetup, getQueryParams());
+class MonthlyConsumer extends PureComponent {
+  state = this.props.initialState;
+
+  signal = axios.CancelToken.source();
+
+  componentDidUpdate() {
+    this.props.search(this.state, { cancelToken: this.signal.token });
+  }
+
+  componentWillUnmount() {
+    this.signal.cancel();
+  }
 
   onChange = ({ target: { name, value } }) => {
-    console.log(`${name}: ${value}`);
-
-    this.setState(state => ({
-      [name]: Object.assign(state[name], { value }),
-    }));
+    this.setState(prevState => ({ ...prevState, [name]: value }));
   }
 
   render() {
@@ -26,7 +32,7 @@ class MonthlyConsumer extends Component {
               placeholder={apiSetup[param].label || param}
               name={param}
               type={apiSetup[param].type}
-              value={this.state[param].value}
+              value={this.state[param]}
               hidden={apiSetup[param].hidden}
               onChange={this.onChange}
             />

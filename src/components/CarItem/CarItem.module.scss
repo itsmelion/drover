@@ -1,0 +1,21 @@
+.item {
+  min-height: 210pt;
+  background-size: 85%;
+  max-width: 250pt;
+  background-color: rgb(245, 245, 245);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  margin: .3rem .125rem;
+  transition: all 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s, background-size 150ms ease 0s;
+
+  &:hover {
+    box-shadow: rgb(228, 227, 227) 0 2pt 4pt;
+    background-size: 90%;
+  }
+}
+
+.carYear {
+  color: rgb(0, 30, 255);
+  font-size: .9rem;
+}
