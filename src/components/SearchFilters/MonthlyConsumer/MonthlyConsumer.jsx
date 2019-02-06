@@ -25,8 +25,9 @@ class MonthlyConsumer extends PureComponent {
     return (
       <SearchContainer>
         {apiParams.map(param => (
-          <fieldset flex="none" key={param}>
-            <label htmlFor={param}>{apiSetup[param].label}</label>
+          <fieldset flex="none" key={param} disabled={apiSetup[param].disabled}>
+            <label className="mv05" htmlFor={param}>{apiSetup[param].label}</label>
+
             <input
               id={param}
               placeholder={apiSetup[param].label || param}
@@ -35,6 +36,7 @@ class MonthlyConsumer extends PureComponent {
               value={this.state[param]}
               hidden={apiSetup[param].hidden}
               onChange={this.onChange}
+              disabled={apiSetup[param].disabled}
             />
           </fieldset>
         ))}

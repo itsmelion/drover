@@ -12,7 +12,7 @@ const CarItem = React.memo(({ car }) => (
   >
     <div className="right">
       <h3>£{getPrice(car.price_discount_and_deposit_schedule_hash)}</h3>
-      <sub>{car.period || 'A month'}</sub>
+      <sub className={style.period}>{car.period || 'A month'}</sub>
     </div>
 
     <div>

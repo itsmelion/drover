@@ -1,7 +1,8 @@
 .item {
-  min-height: 200pt;
+  font-size: .9rem;
+  min-height: 180pt;
   background-size: 85%;
-  max-width: 240pt;
+  max-width: 210pt;
   width: 100%;
   background-color: rgb(245, 245, 245);
   background-position: center center;
@@ -15,6 +16,12 @@
     box-shadow: rgb(228, 227, 227) 0 2pt 4pt;
     background-size: 90%;
   }
+}
+
+.period {
+  font-size: .8em;
+  line-height: .9;
+  vertical-align: top;
 }
 
 .carYear {
