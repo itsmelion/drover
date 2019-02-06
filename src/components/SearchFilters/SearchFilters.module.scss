@@ -1,5 +1,5 @@
 .container {
-  max-width: 240pt;
+  max-width: 200pt;
   min-width: 5rem;
 
   label {
@@ -8,12 +8,12 @@
 
   input {
     display: flex;
-    align-items: center;
     background-color: white;
     padding: 0 .25rem;
     border: 1pt solid black;
     border-image: initial;
     line-height: 1.5;
+    width: 100%;
     font-size: 1.15rem;
   }
 }

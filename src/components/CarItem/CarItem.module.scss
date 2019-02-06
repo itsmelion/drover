@@ -1,13 +1,15 @@
 .item {
-  min-height: 210pt;
+  min-height: 200pt;
   background-size: 85%;
-  max-width: 250pt;
+  max-width: 240pt;
+  width: 100%;
   background-color: rgb(245, 245, 245);
   background-position: center center;
   background-repeat: no-repeat;
   padding: 1rem;
-  margin: .3rem .125rem;
+  margin: .25rem;
   transition: all 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s, background-size 150ms ease 0s;
+  cursor: pointer;
 
   &:hover {
     box-shadow: rgb(228, 227, 227) 0 2pt 4pt;
@@ -16,6 +18,8 @@
 }
 
 .carYear {
+  font-family: 'GT-Walsheim-Pro-Regular';
+  font-weight: 400;
   color: rgb(0, 30, 255);
   font-size: .9rem;
 }

@@ -8,7 +8,7 @@
   "author": "Christhopher Lion <christhopherleao@icloud.com>",
   "dependencies": {
     "axios": "^0.18.0",
-    "flamework": "^3.1.1",
+    "flamework": "^3.1.2",
     "lodash": "^4.17.11",
     "query-string": "^6.2.0",
     "react": "^16.7.0",

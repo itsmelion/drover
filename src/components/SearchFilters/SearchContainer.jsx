@@ -3,7 +3,13 @@ import { container } from './SearchFilters.module.scss';
 
 
 const SearchContainer = React.memo(({ children }) => (
-  <section flex="auto" id="SearchContainer" className={container}>
+  <section
+    id="SearchContainer"
+    flex="auto"
+    column=""
+    align="start stretch"
+    className={container}
+  >
     {children}
   </section>
 ));

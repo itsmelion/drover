@@ -25,7 +25,7 @@ class MonthlyConsumer extends PureComponent {
     return (
       <SearchContainer>
         {apiParams.map(param => (
-          <fieldset key={param}>
+          <fieldset flex="none" key={param}>
             <label htmlFor={param}>{apiSetup[param].label}</label>
             <input
               id={param}
