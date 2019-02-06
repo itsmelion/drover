@@ -3,7 +3,7 @@ import { debounce } from 'lodash';
 import { search, apiRequest } from 'api';
 import queryString from 'query-string';
 import CarList from 'components/CarList/CarList';
-import MonthlyConsumer from 'components/SearchFilters/MonthlyConsumer/MonthlyConsumer';
+import Consumer from 'components/SearchFilters/Consumer/Consumer';
 
 class SearchPage extends PureComponent {
   state = { list: [] };
@@ -30,7 +30,7 @@ class SearchPage extends PureComponent {
 
     return (
       <main id="SearchPage" className="row nowrap mobile-wrap contain">
-        <MonthlyConsumer initialState={this.initialQuery} search={this.search} />
+        <Consumer initialState={this.initialQuery} search={this.search} />
         <CarList list={list} />
       </main>
     );

@@ -7,7 +7,7 @@ import NavigationBar from 'components/NavigationBar/NavigationBar';
 
 render(
   <>
-    <NavigationBar />
+    {NavigationBar}
     <SearchPage />
   </>,
   document.getElementById('root'),

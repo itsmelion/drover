@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-for, react/destructuring-assignment */
 import axios from 'axios';
 import React, { PureComponent } from 'react';
-import { apiParams, apiSetup } from 'api';
+import inputs, { inputKeys } from 'api/dynamic-inputs.data';
 import SearchContainer from '../SearchContainer';
 
 class MonthlyConsumer extends PureComponent {
@@ -24,19 +24,19 @@ class MonthlyConsumer extends PureComponent {
   render() {
     return (
       <SearchContainer>
-        {apiParams.map(param => (
-          <fieldset flex="none" key={param} disabled={apiSetup[param].disabled}>
-            <label className="mv05" htmlFor={param}>{apiSetup[param].label}</label>
+        {inputKeys.map(key => (
+          <fieldset flex="none" key={key} disabled={inputs[key].disabled}>
+            <label className="mv05" htmlFor={key}>{inputs[key].label}</label>
 
             <input
-              id={param}
-              placeholder={apiSetup[param].label || param}
-              name={param}
-              type={apiSetup[param].type}
-              value={this.state[param]}
-              hidden={apiSetup[param].hidden}
+              id={key}
+              placeholder={inputs[key].label || key}
+              name={key}
+              type={inputs[key].type}
+              value={this.state[key]}
+              hidden={inputs[key].hidden}
               onChange={this.onChange}
-              disabled={apiSetup[param].disabled}
+              disabled={inputs[key].disabled}
             />
           </fieldset>
         ))}
