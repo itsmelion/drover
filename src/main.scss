@@ -5,3 +5,12 @@ h2, h3, h4, h5, h6, .bold {
   font-family: 'GT-Walsheim-Pro-Medium';
   font-weight: 500;
 }
+
+.button {
+  border: 1pt solid black;
+  &.true {
+    background-color: #001eff;
+    color: white;
+    border-color: #001eff;
+  }
+}
