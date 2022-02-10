@@ -32,7 +32,7 @@
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "moxios": "^0.4.0",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   },
   "optionalDependencies": {
     "eslint-config-airbnb": "^17.1.0",
